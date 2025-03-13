@@ -3,6 +3,7 @@ import Logo from "@/assets/logosaas.png"
 import MenuIcon from "@/assets/menu.svg"
 
 import Image from "next/image"
+import ButtonPrimary from "../buttons/ButtonPrimary"
 
 const menuLinks = [
     { id: 1, label: "About" },
@@ -14,7 +15,7 @@ const menuLinks = [
 
 export default function Header(){
     return(
-        <header className="sticky top-0">
+        <header className="sticky top-0 backdrop-blur-sm z-10">
             <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
                 <p className="text-white/60 hidden md:block">Streamline your workflow and boost your productivity</p>
                 <div className="inline-flex items-center gap-1">
@@ -29,14 +30,15 @@ export default function Header(){
                         <MenuIcon className="h-7 w-7 md:hidden" />
                         <nav className="hidden md:flex gap-6 text-black items-center">
                             {menuLinks.map(({ id, label }) => (
-                                <a href="#" key={id}>{label}</a>
+                                <a 
+                                    href="#" 
+                                    key={id}
+                                    className="font-bold"
+                                >
+                                    {label}
+                                </a>
                             ))}
-                            <button 
-                                className="bg-black text-white px-4 py-2 rounded-lg font-medium tracking-tight
-                                cursor-pointer"
-                            >
-                                Get for free
-                            </button>
+                            <ButtonPrimary>Get for free</ButtonPrimary>
                         </nav>
                     </div>
                 </div>
