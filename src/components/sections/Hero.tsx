@@ -6,30 +6,21 @@ import Image from "next/image";
 import cogImage from "@/assets/cog.png"
 import cylinderImage from "@/assets/cylinder.png"
 import noodleImage from "@/assets/noodle.png"
+import Tag from "../Tag";
+import Paragraph from "../Paragraph";
 
 export default function Hero(){
     return(
         <section className="pb-20 md:pb-10 md:pt-5 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183ec2,#eaeefe_100%)] overflow-x-clip">
-            <div className="container mx-auto px-4 lg:px-12">
+            <div className="container-section">
                 <div className="md:flex md:items-center">
                     <div className="md:w-[478px]">
-                        <div
-                            className="text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight"
-                        >
-                            Version 2.0 is here
-                        </div>
-                        <h1
-                            className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001e80]
-                            text-transparent bg-clip-text mt-6"
-                        >
-                            Pathway to productivity
-                        </h1>
-                        <p
-                            className="text-xl text-[#010d3e] tracking-tight mt-6"
-                        >
+                        <Tag>Version 2.0 is here</Tag>
+                        <h1 className="heading">Pathway to productivity</h1>
+                        <Paragraph>
                             Celebrate the joy of accomplishment with an app designed to track your progress, 
                             motivate your efforts, and celebrate your successes.
-                        </p>
+                        </Paragraph>
                         <div className="flex gap-1 items-center mt-[30px]">
                             <ButtonPrimary>Get for free</ButtonPrimary>
                             <ButtonText>Learn more</ButtonText>

@@ -24,7 +24,7 @@ export default function Header(){
                 </div>
             </div>
             <div className="py-5">
-                <div className="container mx-auto px-4">
+                <div className="container-section">
                     <div className="flex items-center justify-between">
                         <Image src={Logo} alt="logo" width={40} height={40} />
                         <MenuIcon className="h-7 w-7 md:hidden" />
