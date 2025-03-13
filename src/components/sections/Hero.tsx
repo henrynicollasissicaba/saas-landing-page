@@ -12,7 +12,7 @@ export default function Hero(){
         <section className="pb-20 md:pb-10 md:pt-5 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183ec2,#eaeefe_100%)] overflow-x-clip">
             <div className="container mx-auto px-4 lg:px-12">
                 <div className="md:flex md:items-center">
-                    <div className="md:w-[478px] ">
+                    <div className="md:w-[478px]">
                         <div
                             className="text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight"
                         >
@@ -35,7 +35,7 @@ export default function Hero(){
                             <ButtonText>Learn more</ButtonText>
                         </div>
                     </div>
-                    <div className="mt-20 md:mt-0 h-[648px] md:flex-1 relative">
+                    <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
                         <Image 
                             src={cogImage} 
                             alt="cog image"
