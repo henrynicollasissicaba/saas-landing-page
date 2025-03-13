@@ -16,8 +16,8 @@ export default function Hero(){
                 <div className="md:flex md:items-center">
                     <div className="md:w-[478px]">
                         <Tag>Version 2.0 is here</Tag>
-                        <h1 className="heading">Pathway to productivity</h1>
-                        <Paragraph>
+                        <h1 className="heading mt-6">Pathway to productivity</h1>
+                        <Paragraph className="mt-6">
                             Celebrate the joy of accomplishment with an app designed to track your progress, 
                             motivate your efforts, and celebrate your successes.
                         </Paragraph>

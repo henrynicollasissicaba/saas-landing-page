@@ -2,7 +2,7 @@
 
 @layer components {
     .btn {
-        @apply px-4 py-2 rounded-lg font-medium tracking-tight inline-flex items-center cursor-pointer
+        @apply px-4 py-2 rounded-lg font-medium tracking-tight inline-flex items-center justify-center cursor-pointer
     }
 
     .btn-primary {
@@ -19,6 +19,10 @@
 
     .heading {
         @apply text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001e80] 
-        text-transparent bg-clip-text mt-6
+        text-transparent bg-clip-text
+    }
+
+    .container-heading {
+        @apply max-w-[540px] mx-auto
     }
 }

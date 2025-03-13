@@ -10,12 +10,12 @@ export default function ProductShowCase(){
     return(
         <section className="bg-gradient-to-b from-white to-[#d2dcff] py-24 overflow-x-clip">
             <div className="container-section">
-                <div className="max-w-[540px] mx-auto">
+                <div className="container-heading">
                     <div className="flex justify-center">
                         <Tag>Boost your productivity</Tag>
                     </div>
-                    <h2 className="heading text-center md:leading-[60px] md:text-[54px]">A more effective way to track progress</h2>
-                    <Paragraph className="text-center text-[22px] leading-[30px]">
+                    <h2 className="heading text-center md:leading-[60px] md:text-[54px] mt-6">A more effective way to track progress</h2>
+                    <Paragraph className="text-center text-[22px] leading-[30px] mt-6">
                         Effortlessly turn your ideas into a fully functional, responsive, SaaS website in just minutes with
                         this template
                     </Paragraph>
