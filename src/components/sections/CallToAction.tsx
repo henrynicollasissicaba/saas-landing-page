@@ -11,7 +11,7 @@ export default function CallToAction(){
             <div className="container-section">
                 <div className="container-heading relative">
                     <h2 className="heading text-center md:leading-[80px]">Sign up for free today</h2>
-                    <Paragraph className="text-center mt-5 leading-[30px]">
+                    <Paragraph className="text-center text-[22px] mt-5 leading-[30px]">
                         Celebrate the joy of accomplishment with an app designed to track your progres and motivate your efforts.
                     </Paragraph>
                     <Image 
