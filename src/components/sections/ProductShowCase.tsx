@@ -1,3 +1,5 @@
+"use client"
+
 import productImage from "@/assets/product-image.png"
 import pyramidImage from "@/assets/pyramid.png"
 import tubeImage from "@/assets/tube.png"
@@ -6,9 +8,20 @@ import Image from "next/image"
 import Tag from "../Tag"
 import Paragraph from "../Paragraph"
 
+import { motion, useScroll, useTransform } from "framer-motion"
+import { useRef } from "react"
+
 export default function ProductShowCase(){
+    const sectionRef = useRef(null)
+
+    const { scrollYProgress } = useScroll({
+        target: sectionRef,
+        offset: ['start end', 'end start']
+    })
+
+    const translateY = useTransform(scrollYProgress, [0, 1], [150, -150])
     return(
-        <section className="bg-gradient-to-b from-white to-[#d2dcff] py-24 overflow-x-clip">
+        <section ref={sectionRef} className="bg-gradient-to-b from-white to-[#d2dcff] py-24 overflow-x-clip">
             <div className="container-section">
                 <div className="container-heading">
                     <div className="flex justify-center">
@@ -26,19 +39,25 @@ export default function ProductShowCase(){
                         alt="product image" 
                         className="mt-10" 
                     />
-                    <Image 
-                        src={pyramidImage} 
+                    <motion.img 
+                        src={pyramidImage.src} 
                         alt="pyramid image"
                         width={262}
                         height={262}
-                        className="hidden md:block absolute -right-36 -top-32" 
+                        className="hidden md:block absolute -right-36 -top-32"
+                        style={{
+                            translateY
+                        }}
                     />
-                    <Image 
-                        src={tubeImage} 
+                    <motion.img 
+                        src={tubeImage.src} 
                         alt="tube image"
                         width={248}
                         height={248}
-                        className="hidden md:block absolute bottom-24 -left-36" 
+                        className="hidden md:block absolute bottom-24 -left-36"
+                        style={{
+                            translateY
+                        }}
                     />
                 </div>
             </div>
