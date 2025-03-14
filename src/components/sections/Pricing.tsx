@@ -1,7 +1,10 @@
+"use client"
+
 import { pricing } from "@/utils";
 import Paragraph from "../Paragraph";
 import CheckIcon from "@/assets/check.svg"
 import { twMerge } from "tailwind-merge";
+import { motion } from "framer-motion";
 
 export default function Pricing(){
     return(
@@ -33,12 +36,21 @@ export default function Pricing(){
                                     <div 
                                         className="inline-flex font-bold px-4 py-1.5 rounded-xl border border-white/20 "
                                     >
-                                        <span
-                                            className="bg-[linear-gradient(to_right,#dd7ddf,#e1cd86,#bbcb92,#71c2ef,#3bffff,#dd7ddf)]
-                                            text-transparent bg-clip-text font-medium"
+                                        <motion.span
+                                            className="bg-[linear-gradient(to_right,#dd7ddf,#e1cd86,#bbcb92,#71c2ef,#3bffff,#dd7ddf,#e1cd86,#bbcb92,#71c2ef,#3bffff)]
+                                            text-transparent bg-clip-text font-medium [background-size:200%]"
+                                            animate={{
+                                                backgroundPositionX: '100%'
+                                            }}
+                                            transition={{
+                                                duration: 2,
+                                                repeat: Infinity,
+                                                ease: "linear",
+                                                repeatType: "loop"
+                                            }}
                                         >
                                             Popular
-                                        </span>
+                                        </motion.span>
                                     </div>
                                 )}
                             </div>
