@@ -5,7 +5,7 @@ import { twMerge } from "tailwind-merge";
 
 export default function Pricing(){
     return(
-        <section className="py-24">
+        <section className="py-24 bg-white">
             <div className="container-section">
                 <div className="container-heading">
                     <h2 className="heading text-center md:leading-[60px] md:text-[54px]">Pricing</h2>
@@ -17,7 +17,7 @@ export default function Pricing(){
                     {pricing.map(({ title, monthlyPrice, buttonText, popular, inverse, features }, index) => (
                         <div
                             key={index}
-                            className={twMerge("p-10 rounded-3xl shadow-[0_7px_14px_#eaeaea] border border-[#f1f1f1] max-w-sm w-full", 
+                            className={twMerge("p-10 rounded-3xl shadow-[0_7px_14px_#eaeaea] border border-[#222222]/10 max-w-sm w-full", 
                                 inverse && "border-black bg-black text-white"
                             )}
                         >
