@@ -17,10 +17,11 @@ export default function Testimonials(){
                         around the world.
                     </Paragraph>
                 </div>
-                <div className="flex justify-center gap-6">
-                    <TestimonialsColumn testimonials={firstColumnTestimonials} />
-                    <TestimonialsColumn testimonials={secondColumnTestimonials} className="hidden md:flex" />
-                    <TestimonialsColumn testimonials={thirdColumnTestimonials} className="hidden lg:flex" />
+                <div className="flex justify-center gap-6 mt-10
+                [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[738px] overflow-hidden">
+                    <TestimonialsColumn testimonials={firstColumnTestimonials} duration={15} />
+                    <TestimonialsColumn testimonials={secondColumnTestimonials} className="hidden md:block" duration={19} />
+                    <TestimonialsColumn testimonials={thirdColumnTestimonials} className="hidden lg:block" duration={17} />
                 </div>
             </div>
         </section>
