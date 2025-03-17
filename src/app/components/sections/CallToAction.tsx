@@ -2,8 +2,8 @@
 
 import ButtonPrimary from "../buttons/ButtonPrimary";
 import ButtonText from "../buttons/ButtonText";
-import starImage from "@/assets/star.png"
-import springImage from "@/assets/spring.png"
+import starImage from "@/app/assets/star.png"
+import springImage from "@/app/assets/spring.png"
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Description from "../Description";

@@ -1,4 +1,4 @@
-import ArrowIcon from "@/assets/arrow-right.svg"
+import ArrowIcon from "@/app/assets/arrow-right.svg"
 import { ReactNode } from "react"
 
 interface ButtonProps {

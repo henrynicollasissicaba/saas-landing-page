@@ -1,8 +1,8 @@
 "use client"
 
-import productImage from "@/assets/product-image.png"
-import pyramidImage from "@/assets/pyramid.png"
-import tubeImage from "@/assets/tube.png"
+import productImage from "@/app/assets/product-image.png"
+import pyramidImage from "@/app/assets/pyramid.png"
+import tubeImage from "@/app/assets/tube.png"
 import Image from "next/image"
 import Tag from "../Tag"
 import { motion, useScroll, useTransform } from "framer-motion"

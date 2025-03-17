@@ -2,9 +2,9 @@
 
 import ButtonPrimary from "../buttons/ButtonPrimary";
 import ButtonText from "../buttons/ButtonText";
-import cogImage from "@/assets/cog.png"
-import cylinderImage from "@/assets/cylinder.png"
-import noodleImage from "@/assets/noodle.png"
+import cogImage from "@/app/assets/cog.png"
+import cylinderImage from "@/app/assets/cylinder.png"
+import noodleImage from "@/app/assets/noodle.png"
 import Tag from "../Tag";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";

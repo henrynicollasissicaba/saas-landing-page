@@ -1,9 +1,9 @@
-import logoAcme from "@/assets/logo-acme.png";
-import logoApex from "@/assets/logo-apex.png";
-import logoCelestial from "@/assets/logo-celestial.png";
-import logoEcho from "@/assets/logo-echo.png";
-import logoPulse from "@/assets/logo-pulse.png";
-import logoQuantum from "@/assets/logo-quantum.png";
+import logoAcme from "@/app/assets/logo-acme.png";
+import logoApex from "@/app/assets/logo-apex.png";
+import logoCelestial from "@/app/assets/logo-celestial.png";
+import logoEcho from "@/app/assets/logo-echo.png";
+import logoPulse from "@/app/assets/logo-pulse.png";
+import logoQuantum from "@/app/assets/logo-quantum.png";
 
 import { StaticImageData } from "next/image";
 

@@ -1,10 +1,10 @@
 import Image from "next/image";
-import logo from "@/assets/logosaas.png"
-import SocialX from "@/assets/social-x.svg"
-import SocialInsta from "@/assets/social-insta.svg"
-import SocialLinkedin from "@/assets/social-linkedin.svg"
-import SocialPin from "@/assets/social-pin.svg"
-import SocialYoutube from "@/assets/social-youtube.svg"
+import logo from "@/app/assets/logosaas.png"
+import SocialX from "@/app/assets/social-x.svg"
+import SocialInsta from "@/app/assets/social-insta.svg"
+import SocialLinkedin from "@/app/assets/social-linkedin.svg"
+import SocialPin from "@/app/assets/social-pin.svg"
+import SocialYoutube from "@/app/assets/social-youtube.svg"
 
 const footerLinks = [
     { id: 1, label: "About" },
