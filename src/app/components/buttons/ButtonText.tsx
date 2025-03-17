@@ -1,5 +1,5 @@
-import ArrowIcon from "@/app/assets/arrow-right.svg"
 import { ReactNode } from "react"
+import ArrowRight from "../icons/arrow-right"
 
 interface ButtonProps {
     children: ReactNode
@@ -11,7 +11,7 @@ export default function ButtonText({ children }: ButtonProps){
             className="btn btn-text gap-1 items-center"
         >
             <span>{children}</span>
-            <ArrowIcon className="w-5 h-5" />
+            <ArrowRight className="w-5 h-5" />
         </button>
     )
 }

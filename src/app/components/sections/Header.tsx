@@ -1,8 +1,7 @@
-import ArrowRight from "@/app/assets/arrow-right.svg"
-import MenuIcon from "@/app/assets/menu.svg"
-
 import Image from "next/image"
 import ButtonPrimary from "@/app/components/buttons/ButtonPrimary"
+import ArrowRight from "../icons/arrow-right";
+import Menu from "../icons/menu";
 
 export default function Header(){
     const menuLinks = [
@@ -26,7 +25,7 @@ export default function Header(){
                 <div className="container">
                     <div className="flex items-center justify-between">
                         <Image src="/logosaas.png" alt="logo" width={40} height={40} />
-                        <MenuIcon className="h-7 w-7 md:hidden" />
+                        <Menu className="h-7 w-7 md:hidden" />
                         <nav className="hidden md:flex gap-6 text-black items-center">
                             {menuLinks.map(({ id, label }) => (
                                 <a 

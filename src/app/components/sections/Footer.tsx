@@ -1,9 +1,9 @@
 import Image from "next/image";
-import SocialX from "@/app/assets/social-x.svg"
-import SocialInsta from "@/app/assets/social-insta.svg"
-import SocialLinkedin from "@/app/assets/social-linkedin.svg"
-import SocialPin from "@/app/assets/social-pin.svg"
-import SocialYoutube from "@/app/assets/social-youtube.svg"
+import SocialInsta from "../icons/social/social-insta";
+import SocialLinkedin from "../icons/social/social-linkedin";
+import SocialX from "../icons/social/social-x";
+import SocialPin from "../icons/social/social-pin";
+import SocialYoutube from "../icons/social/social-youtube";
 
 export default function Footer(){
     const footerLinks = [
@@ -35,9 +35,9 @@ export default function Footer(){
                     ))}
                 </nav>
                 <div className="flex justify-center gap-6 mt-6">
-                    <SocialX />
                     <SocialInsta />
                     <SocialLinkedin />
+                    <SocialX />
                     <SocialPin />
                     <SocialYoutube />
                 </div>

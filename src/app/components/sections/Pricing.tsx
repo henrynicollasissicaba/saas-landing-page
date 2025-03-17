@@ -1,13 +1,13 @@
 "use client"
 
 import { pricing } from "@/app/utils/pricing";
-import CheckIcon from "@/app/assets/check.svg"
 import { twMerge } from "tailwind-merge";
 import Description from "@/app/components/Description";
 import Heading from "@/app/components/Heading";
 import Card from "@/app/components/Card";
 import PopularTag from "@/app/components/PopularTag";
 import ButtonPrimary from "@/app/components/buttons/ButtonPrimary";
+import Check from "../icons/check";
 
 export default function Pricing(){
     return(
@@ -53,7 +53,7 @@ export default function Pricing(){
                                         key={index}
                                         className="text-sm flex items-center gap-4"
                                     >
-                                        <CheckIcon className="w-6 h-6" />
+                                        <Check className="w-6 h-6" />
                                         <span>{feature}</span>
                                     </li>
                                 ))}
