@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
 
+@theme {
+    --color-primary-700: #001e80;
+    --color-primary-900: #010d3e;
+}
+
 @utility container {
     @apply mx-auto px-4 lg:px-12
 }
@@ -23,12 +28,12 @@
     /* TEXT STYLES */
 
     .heading {
-        @apply text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001e80] 
+        @apply text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-primary-700 
         text-transparent bg-clip-text
     }
 
     .description {
-        @apply text-xl text-[#010d3e] tracking-tight
+        @apply text-xl text-primary-900 tracking-tight
     }
 
     /* MAX WIDTH HEADING CONTAINER */
