@@ -2,11 +2,12 @@
 
 import ButtonPrimary from "../buttons/ButtonPrimary";
 import ButtonText from "../buttons/ButtonText";
-import Paragraph from "../Paragraph";
 import starImage from "@/assets/star.png"
 import springImage from "@/assets/spring.png"
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import Description from "../Description";
+import Heading from "../Heading";
 
 export default function CallToAction(){
     const callToActionRef = useRef(null)
@@ -20,12 +21,14 @@ export default function CallToAction(){
 
     return(
         <section ref={callToActionRef} className="bg-gradient-to-b from-white to-[#d2dcff] py-24 overflow-x-clip">
-            <div className="container-section">
+            <div className="container">
                 <div className="container-heading relative">
-                    <h2 className="heading text-center md:leading-[80px]">Sign up for free today</h2>
-                    <Paragraph className="text-center text-[22px] mt-5 leading-[30px]">
+                    <Heading className="heading md:leading-[80px]">
+                        Sign up for free today
+                    </Heading>
+                    <Description className="text-center text-[22px] mt-5 leading-[30px]">
                         Celebrate the joy of accomplishment with an app designed to track your progres and motivate your efforts.
-                    </Paragraph>
+                    </Description>
                     <motion.img 
                         src={starImage.src} 
                         alt="star image" 

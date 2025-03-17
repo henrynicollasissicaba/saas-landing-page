@@ -3,13 +3,12 @@
 import productImage from "@/assets/product-image.png"
 import pyramidImage from "@/assets/pyramid.png"
 import tubeImage from "@/assets/tube.png"
-
 import Image from "next/image"
 import Tag from "../Tag"
-import Paragraph from "../Paragraph"
-
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
+import Description from "../Description"
+import Heading from "../Heading"
 
 export default function ProductShowCase(){
     const sectionRef = useRef(null)
@@ -22,16 +21,18 @@ export default function ProductShowCase(){
     const translateY = useTransform(scrollYProgress, [0, 1], [150, -150])
     return(
         <section ref={sectionRef} className="bg-gradient-to-b from-white to-[#d2dcff] py-24 overflow-x-clip">
-            <div className="container-section">
+            <div className="container">
                 <div className="container-heading">
                     <div className="flex justify-center">
                         <Tag>Boost your productivity</Tag>
                     </div>
-                    <h2 className="heading text-center md:leading-[60px] md:text-[54px] mt-6">A more effective way to track progress</h2>
-                    <Paragraph className="text-center text-[22px] leading-[30px] mt-6">
+                    <Heading className="heading text-center md:leading-[60px] md:text-[54px] mt-6">
+                        A more effective way to track progress
+                    </Heading>
+                    <Description className="text-center text-[22px] leading-[30px] mt-5">
                         Effortlessly turn your ideas into a fully functional, responsive, SaaS website in just minutes with
                         this template
-                    </Paragraph>
+                    </Description>
                 </div>
                 <div className="relative">
                     <Image 

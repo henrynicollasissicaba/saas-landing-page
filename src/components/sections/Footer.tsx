@@ -18,7 +18,7 @@ const footerLinks = [
 export default function Footer(){
     return(
         <footer className="bg-black text-[#bcbcbc] text-sm py-10 text-center">
-            <div className="container-section">
+            <div className="container">
                 <div 
                     className="inline-flex relative before:content-[''] before:top-2 before:bottom-0 before:w-full before:absolute
                     before:bg-[linear-gradient(to_right,#f87bff,#fb92cf,#ffdd9b,#c2f0b1,#2fd8fe)] before:blur"

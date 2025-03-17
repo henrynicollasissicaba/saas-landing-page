@@ -1,9 +1,16 @@
-import { ChildrenProps } from "@/types";
+import { ReactNode } from "react"
+import { twMerge } from "tailwind-merge"
 
-export default function ButtonPrimary({ children }: ChildrenProps){
+interface ButtonProps {
+    children: ReactNode
+    className?: string
+    inverse?: boolean
+}
+
+export default function ButtonPrimary({ children, className, inverse }: ButtonProps){
     return(
         <button
-            className="btn btn-primary"
+            className={twMerge(`btn btn-primary ${className}`, inverse && "bg-white text-black")}
         >
             {children}
         </button>

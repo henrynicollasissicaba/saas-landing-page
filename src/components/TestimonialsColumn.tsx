@@ -5,6 +5,7 @@ import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
 import React from "react";
+import Card from "./Card";
 
 interface TestimonialsProps {
     testimonials: Testimonial[]
@@ -30,10 +31,7 @@ export default function TestimonialsColumn(props: TestimonialsProps){
                 {[...new Array(2)].map((_, index) => (
                     <React.Fragment key={index}>
                         {props.testimonials.map(({ text, imageSrc, name, username }, index) => (
-                            <div
-                                key={index}
-                                className="p-10 rounded-3xl shadow-[0_7px_14px_#eaeaea] border border-[#222222]/10 max-w-sm w-full"
-                            >
+                            <Card key={index}>
                                 <p>{text}</p>
                                 <div className="flex items-center gap-2 mt-5">
                                     <Image 
@@ -48,7 +46,7 @@ export default function TestimonialsColumn(props: TestimonialsProps){
                                         <span className="leading-5 tracking-tight">{username}</span>
                                     </div>
                                 </div>
-                            </div>
+                            </Card>
                         ))}
                     </React.Fragment>
                 ))}

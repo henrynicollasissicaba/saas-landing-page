@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
+
+@utility container {
+    @apply mx-auto px-4 lg:px-12
+}
+
 @layer components {
+    /* BUTTON STYLES */
+
     .btn {
         @apply px-4 py-2 rounded-lg font-medium tracking-tight inline-flex items-center justify-center cursor-pointer
     }
@@ -13,14 +20,18 @@
         @apply text-black bg-transparent
     }
 
-    .container-section {
-        @apply container mx-auto px-4 lg:px-12
-    }
+    /* TEXT STYLES */
 
     .heading {
         @apply text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001e80] 
         text-transparent bg-clip-text
     }
+
+    .description {
+        @apply text-xl text-[#010d3e] tracking-tight
+    }
+
+    /* MAX WIDTH HEADING CONTAINER */
 
     .container-heading {
         @apply max-w-[540px] mx-auto
