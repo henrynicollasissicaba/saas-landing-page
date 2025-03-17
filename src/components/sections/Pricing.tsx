@@ -3,7 +3,6 @@
 import { pricing } from "@/utils/pricing";
 import CheckIcon from "@/assets/check.svg"
 import { twMerge } from "tailwind-merge";
-import { motion } from "framer-motion";
 import Description from "../Description";
 import Heading from "../Heading";
 import Card from "../Card";
