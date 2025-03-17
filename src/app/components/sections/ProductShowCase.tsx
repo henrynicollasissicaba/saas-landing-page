@@ -4,11 +4,11 @@ import productImage from "@/app/assets/product-image.png"
 import pyramidImage from "@/app/assets/pyramid.png"
 import tubeImage from "@/app/assets/tube.png"
 import Image from "next/image"
-import Tag from "../Tag"
+import Tag from "@/app/components/Tag"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
-import Description from "../Description"
-import Heading from "../Heading"
+import Description from "@/app/components/Description"
+import Heading from "@/app/components/Heading"
 
 export default function ProductShowCase(){
     const sectionRef = useRef(null)
@@ -19,6 +19,7 @@ export default function ProductShowCase(){
     })
 
     const translateY = useTransform(scrollYProgress, [0, 1], [150, -150])
+    
     return(
         <section ref={sectionRef} className="bg-gradient-to-b from-white to-[#d2dcff] py-24 overflow-x-clip">
             <div className="container">

@@ -1,11 +1,11 @@
 "use client"
 
-import ButtonPrimary from "../buttons/ButtonPrimary";
-import ButtonText from "../buttons/ButtonText";
+import ButtonPrimary from "@/app/components/buttons/ButtonPrimary";
+import ButtonText from "@/app/components/buttons/ButtonText";
 import cogImage from "@/app/assets/cog.png"
 import cylinderImage from "@/app/assets/cylinder.png"
 import noodleImage from "@/app/assets/noodle.png"
-import Tag from "../Tag";
+import Tag from "@/app/components/Tag";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 

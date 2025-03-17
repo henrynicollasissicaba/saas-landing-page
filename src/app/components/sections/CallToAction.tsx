@@ -1,13 +1,13 @@
 "use client"
 
-import ButtonPrimary from "../buttons/ButtonPrimary";
-import ButtonText from "../buttons/ButtonText";
+import ButtonPrimary from "@/app/components/buttons/ButtonPrimary";
+import ButtonText from "@/app/components/buttons/ButtonText";
 import starImage from "@/app/assets/star.png"
 import springImage from "@/app/assets/spring.png"
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import Description from "../Description";
-import Heading from "../Heading";
+import Description from "@/app/components/Description";
+import Heading from "@/app/components/Heading";
 
 export default function CallToAction(){
     const callToActionRef = useRef(null)

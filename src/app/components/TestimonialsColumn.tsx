@@ -1,6 +1,6 @@
 "use client"
 
-import { Testimonial } from "@/app/utils/testimonials";
+import { Testimonial } from "../utils/testimonials";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import React from "react";

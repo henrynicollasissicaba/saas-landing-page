@@ -3,11 +3,11 @@
 import { pricing } from "@/app/utils/pricing";
 import CheckIcon from "@/app/assets/check.svg"
 import { twMerge } from "tailwind-merge";
-import Description from "../Description";
-import Heading from "../Heading";
-import Card from "../Card";
-import PopularTag from "../PopularTag";
-import ButtonPrimary from "../buttons/ButtonPrimary";
+import Description from "@/app/components/Description";
+import Heading from "@/app/components/Heading";
+import Card from "@/app/components/Card";
+import PopularTag from "@/app/components/PopularTag";
+import ButtonPrimary from "@/app/components/buttons/ButtonPrimary";
 
 export default function Pricing(){
     return(

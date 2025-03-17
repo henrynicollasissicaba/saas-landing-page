@@ -1,19 +1,18 @@
 import ArrowRight from "@/app/assets/arrow-right.svg"
-import Logo from "@/app/assets/logosaas.png"
 import MenuIcon from "@/app/assets/menu.svg"
 
 import Image from "next/image"
-import ButtonPrimary from "../buttons/ButtonPrimary"
-
-const menuLinks = [
-    { id: 1, label: "About" },
-    { id: 2, label: "Features" },
-    { id: 3, label: "Customers" },
-    { id: 4, label: "Updated" },
-    { id: 5, label: "Help" },
-]
+import ButtonPrimary from "@/app/components/buttons/ButtonPrimary"
 
 export default function Header(){
+    const menuLinks = [
+        { id: 1, label: "About" },
+        { id: 2, label: "Features" },
+        { id: 3, label: "Customers" },
+        { id: 4, label: "Updated" },
+        { id: 5, label: "Help" },
+    ]
+
     return(
         <header className="sticky top-0 backdrop-blur-sm z-10">
             <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
@@ -26,7 +25,7 @@ export default function Header(){
             <div className="py-5">
                 <div className="container">
                     <div className="flex items-center justify-between">
-                        <Image src={Logo} alt="logo" width={40} height={40} />
+                        <Image src="/logosaas.png" alt="logo" width={40} height={40} />
                         <MenuIcon className="h-7 w-7 md:hidden" />
                         <nav className="hidden md:flex gap-6 text-black items-center">
                             {menuLinks.map(({ id, label }) => (

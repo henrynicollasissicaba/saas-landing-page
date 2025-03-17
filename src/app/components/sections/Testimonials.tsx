@@ -1,8 +1,8 @@
 import { firstColumnTestimonials, secondColumnTestimonials, thirdColumnTestimonials } from "@/app/utils/testimonials";
-import Tag from "../Tag";
-import TestimonialsColumn from "../TestimonialsColumn";
-import Description from "../Description";
-import Heading from "../Heading";
+import Tag from "@/app/components/Tag";
+import TestimonialsColumn from "@/app/components/TestimonialsColumn";
+import Description from "@/app/components/Description";
+import Heading from "@/app/components/Heading";
 
 export default function Testimonials(){
     return(
