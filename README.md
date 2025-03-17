@@ -31,7 +31,7 @@ o Framer Motion para adicionar animações e efeitos na página.
 ---
 
 ## Demo :camera:
-<img width="100%" height="100%" src="./src/assets/readme-img/demo-img.png" />
+<img width="100%" height="100%" src="./src/app/assets/readme-img/demo-img.png" />
 
 ---
 
