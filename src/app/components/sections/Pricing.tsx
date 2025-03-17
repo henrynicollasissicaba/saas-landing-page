@@ -1,6 +1,6 @@
 "use client"
 
-import { pricing } from "@/utils/pricing";
+import { pricing } from "@/app/utils/pricing";
 import CheckIcon from "@/assets/check.svg"
 import { twMerge } from "tailwind-merge";
 import Description from "../Description";

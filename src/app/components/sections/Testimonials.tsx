@@ -1,4 +1,4 @@
-import { firstColumnTestimonials, secondColumnTestimonials, thirdColumnTestimonials } from "@/utils/testimonials";
+import { firstColumnTestimonials, secondColumnTestimonials, thirdColumnTestimonials } from "@/app/utils/testimonials";
 import Tag from "../Tag";
 import TestimonialsColumn from "../TestimonialsColumn";
 import Description from "../Description";

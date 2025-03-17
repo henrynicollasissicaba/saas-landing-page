@@ -1,6 +1,6 @@
 "use client"
 
-import { logoTicker } from "@/utils/logo-ticker"
+import { logoTicker } from "@/app/utils/logo-ticker"
 import Image from "next/image"
 import { motion } from "framer-motion"
 
