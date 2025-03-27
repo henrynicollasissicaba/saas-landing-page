@@ -21,7 +21,7 @@ export default function Testimonials(){
                     </Description>
                 </div>
                 <div className="flex justify-center gap-6 mt-10 max-h-[738px] overflow-hidden
-                [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]">
+                [mask-image:linear-gradient(to_bottom,transparent,black,black,transparent)]">
                     <TestimonialsColumn testimonials={firstColumnTestimonials} duration={15} />
                     <TestimonialsColumn testimonials={secondColumnTestimonials} className="hidden md:block" duration={19} />
                     <TestimonialsColumn testimonials={thirdColumnTestimonials} className="hidden lg:block" duration={17} />
